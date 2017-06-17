@@ -1,5 +1,5 @@
-#ifndef _MURMURTEMPLATE_H
-#define _MURMURTEMPLATE_H
+#ifndef _MURMURTEMPLATE_H_
+#define _MURMURTEMPLATE_H_
 
 
 
