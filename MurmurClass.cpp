@@ -1,7 +1,4 @@
 #include "MurmurClass.h"
 
 
-template<>
-MurmurClass<>::apply() {
-
-}
+// implementation kept in header file due to ease with templates
