@@ -4,7 +4,8 @@
 	$ make clean
 	$ make
 This will compile the classes and the test case. Then run the test case:  
-	$ ./testMurmur
+> `$ ./testMurmur`  
+  
 The parameters to the class can be adjusted in the test case and re-compiled.  
 Class `MurmurClass` object initiated with hash type, followed by key types.  
 The `apply()` method is called with hash buffer and keys as parameter.  
