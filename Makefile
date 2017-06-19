@@ -26,4 +26,4 @@ MurmurClass.o: MurmurClass.cpp MurmurClass.h
 
 # clean executables
 clean:
-	$(RM) $(TARGET) *.o
+	$(RM) $(TARGET) $(TARGET).exe *.o
