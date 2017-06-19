@@ -1,8 +1,8 @@
 # the compiler: g++
 CC = g++
 
-# flags: C++11 support + GDB + treat warnings as errors
-CFLAGS = -std=c++0x -g -Wall -Werror
+# flags: C++14 support + GDB + treat warnings as errors
+CFLAGS = -std=c++1y -g -Wall -Werror
 
 # executable: test case
 TARGET = testMurmur
