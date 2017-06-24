@@ -1,17 +1,18 @@
 # Bigstream-Murmur #
 
 ## Usage ##
-	`$ make clean`
-	`$ make`
+	$ make clean
+	$ make
 This will compile the classes and the test case. Then run the test case:
-	`$ ./testMurmur`
+> `$ ./testMurmur`
+
 The parameters to the class can be adjusted in the test case and re-compiled.
 Class `MurmurClass` object initiated with hash type, followed by key types.
-The apply() method is called with hash buffer and keys as parameter.
+The `apply()` method is called with hash buffer and keys as parameter.
 Example:
-	`MurmurClass<uint32_t, int, char, std::string> murmurObj;`
-	`murmurObj.apply(hashBuffer, 1, 'a', stringItem);`
-	`std::cout << hashBuffer[0] << hashBuffer[1];`
+> `MurmurClass<uint32_t, int, char, std::string> murmurObj;`
+> `murmurObj.apply(hashBuffer, 1, 'a', stringItem);`
+> `std::cout << hashBuffer[0] << hashBuffer[1];`
 
 ## Notes ##
 1. At each step of unpacking parameters/ keys, we update the byte array to store the byte representation of the parameter. This array grows at each call to unpack function, while keeping track of array size.
