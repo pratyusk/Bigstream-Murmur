@@ -25,8 +25,12 @@ Example:
 7. Random seed based on time. Program can be run multiple times to get different hashes based on seed. - currently commented out
 8. Class definition and implementation kept at one place due to its ease working with templates
 
+## Updates ##
+1. Updated with string and c-string to correctly convert them to their byte representation by overloading variadic templates.
+
 ## Testing ##
 Currently tested for:
 1. No keys
 2. Only ints
 3. Ints, char, long, double, float, long long, char *, std::string
+4. char * and std::string unpacking and their various combinations
