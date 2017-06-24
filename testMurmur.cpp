@@ -25,7 +25,7 @@ int main() {
 	std::cout << std::endl;
 
 	std::cout << "### test 2 - only const char * ###" << std::endl;
-	const char *inA2 = "char * input 2";
+	const char *inA2 = "string generic input";
 	uint64_t *hash2 = new uint64_t[2];
 	MurmurClass<uint64_t*, const char *> murmurObj2; // initiate object
 	murmurObj2.apply(hash2, inA2);
@@ -37,7 +37,7 @@ int main() {
 	std::cout << std::endl;
 
 	std::cout << "### test 3 - only std::string ###" << std::endl;
-	std::string inA3 = "string input 2";
+	std::string inA3 = "string generic input";
 	uint64_t *hash3 = new uint64_t[2];
 	MurmurClass<uint64_t*, std::string> murmurObj3; // initiate object
 	murmurObj3.apply(hash3, inA3);
@@ -49,8 +49,8 @@ int main() {
 	std::cout << std::endl;
 
 	std::cout << "### test 4 - only const char * and std::string ###" << std::endl;
-	std::string inA4 = "string input 4";
-	const char *inB4 = "const char * input 4";
+	std::string inA4 = "string input 2";
+	const char *inB4 = "const char * input 2";
 	uint64_t *hash4 = new uint64_t[2];
 	MurmurClass<uint64_t*, std::string, const char *> murmurObj4; // initiate object
 	murmurObj4.apply(hash4, inA4, inB4);
