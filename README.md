@@ -3,6 +3,7 @@
 ## Usage ##
 	$ make clean
 	$ make
+
 This will compile the classes and the test case. Then run the test case:
 > `$ ./testMurmur`
 
